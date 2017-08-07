@@ -1,0 +1,499 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA23F7391F33102200E0674A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA23F7381F33102200E0674A /* main.m */; };
+		AA23F73C1F33102200E0674A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA23F73B1F33102200E0674A /* AppDelegate.m */; };
+		AA23F73F1F33102200E0674A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA23F73E1F33102200E0674A /* ViewController.m */; };
+		AA23F7421F33102200E0674A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA23F7401F33102200E0674A /* Main.storyboard */; };
+		AA23F7441F33102200E0674A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA23F7431F33102200E0674A /* Assets.xcassets */; };
+		AA23F7471F33102200E0674A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA23F7451F33102200E0674A /* LaunchScreen.storyboard */; };
+		AA23F7521F33102200E0674A /* Play_With_Heap_OCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA23F7511F33102200E0674A /* Play_With_Heap_OCTests.m */; };
+		AA23F7991F341A7F00E0674A /* Ninja.png in Resources */ = {isa = PBXBuildFile; fileRef = AA23F7981F341A7F00E0674A /* Ninja.png */; };
+		AA23F7A11F34579400E0674A /* UIImage+MBClipCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = AA23F7A01F34579400E0674A /* UIImage+MBClipCategory.m */; };
+		AAC0D6DD1F38053A00B20791 /* UIView+MBRectCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC0D6DC1F38053A00B20791 /* UIView+MBRectCorner.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA23F74E1F33102200E0674A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA23F72C1F33102200E0674A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA23F7331F33102200E0674A;
+			remoteInfo = "Play-With-Heap-OC";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AA23F7341F33102200E0674A /* Play-With-Heap-OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Play-With-Heap-OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA23F7381F33102200E0674A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AA23F73A1F33102200E0674A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AA23F73B1F33102200E0674A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AA23F73D1F33102200E0674A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AA23F73E1F33102200E0674A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AA23F7411F33102200E0674A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AA23F7431F33102200E0674A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA23F7461F33102200E0674A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AA23F7481F33102200E0674A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA23F74D1F33102200E0674A /* Play-With-Heap-OCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Play-With-Heap-OCTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA23F7511F33102200E0674A /* Play_With_Heap_OCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Play_With_Heap_OCTests.m; sourceTree = "<group>"; };
+		AA23F7531F33102200E0674A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA23F7981F341A7F00E0674A /* Ninja.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ninja.png; sourceTree = "<group>"; };
+		AA23F79F1F34579400E0674A /* UIImage+MBClipCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MBClipCategory.h"; sourceTree = "<group>"; };
+		AA23F7A01F34579400E0674A /* UIImage+MBClipCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MBClipCategory.m"; sourceTree = "<group>"; };
+		AAC0D6DB1F38053A00B20791 /* UIView+MBRectCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MBRectCorner.h"; sourceTree = "<group>"; };
+		AAC0D6DC1F38053A00B20791 /* UIView+MBRectCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MBRectCorner.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA23F7311F33102200E0674A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA23F74A1F33102200E0674A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA23F72B1F33102200E0674A = {
+			isa = PBXGroup;
+			children = (
+				AA23F7361F33102200E0674A /* Play-With-Heap-OC */,
+				AA23F7501F33102200E0674A /* Play-With-Heap-OCTests */,
+				AA23F7351F33102200E0674A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA23F7351F33102200E0674A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA23F7341F33102200E0674A /* Play-With-Heap-OC.app */,
+				AA23F74D1F33102200E0674A /* Play-With-Heap-OCTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA23F7361F33102200E0674A /* Play-With-Heap-OC */ = {
+			isa = PBXGroup;
+			children = (
+				AA23F79A1F34577100E0674A /* Class */,
+				AA23F7971F341A7F00E0674A /* source */,
+				AA23F73A1F33102200E0674A /* AppDelegate.h */,
+				AA23F73B1F33102200E0674A /* AppDelegate.m */,
+				AA23F73D1F33102200E0674A /* ViewController.h */,
+				AA23F73E1F33102200E0674A /* ViewController.m */,
+				AA23F7401F33102200E0674A /* Main.storyboard */,
+				AA23F7431F33102200E0674A /* Assets.xcassets */,
+				AA23F7451F33102200E0674A /* LaunchScreen.storyboard */,
+				AA23F7481F33102200E0674A /* Info.plist */,
+				AA23F7371F33102200E0674A /* Supporting Files */,
+			);
+			path = "Play-With-Heap-OC";
+			sourceTree = "<group>";
+		};
+		AA23F7371F33102200E0674A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA23F7381F33102200E0674A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AA23F7501F33102200E0674A /* Play-With-Heap-OCTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA23F7511F33102200E0674A /* Play_With_Heap_OCTests.m */,
+				AA23F7531F33102200E0674A /* Info.plist */,
+			);
+			path = "Play-With-Heap-OCTests";
+			sourceTree = "<group>";
+		};
+		AA23F7971F341A7F00E0674A /* source */ = {
+			isa = PBXGroup;
+			children = (
+				AA23F7981F341A7F00E0674A /* Ninja.png */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		AA23F79A1F34577100E0674A /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				AA23F79B1F34577100E0674A /* Controller */,
+				AA23F79C1F34577100E0674A /* Model */,
+				AA23F79D1F34577100E0674A /* Tool */,
+				AA23F79E1F34577100E0674A /* View */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		AA23F79B1F34577100E0674A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AA23F79C1F34577100E0674A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AA23F79D1F34577100E0674A /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				AA23F79F1F34579400E0674A /* UIImage+MBClipCategory.h */,
+				AA23F7A01F34579400E0674A /* UIImage+MBClipCategory.m */,
+				AAC0D6DB1F38053A00B20791 /* UIView+MBRectCorner.h */,
+				AAC0D6DC1F38053A00B20791 /* UIView+MBRectCorner.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		AA23F79E1F34577100E0674A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA23F7331F33102200E0674A /* Play-With-Heap-OC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA23F7561F33102200E0674A /* Build configuration list for PBXNativeTarget "Play-With-Heap-OC" */;
+			buildPhases = (
+				AA23F7301F33102200E0674A /* Sources */,
+				AA23F7311F33102200E0674A /* Frameworks */,
+				AA23F7321F33102200E0674A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Play-With-Heap-OC";
+			productName = "Play-With-Heap-OC";
+			productReference = AA23F7341F33102200E0674A /* Play-With-Heap-OC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA23F74C1F33102200E0674A /* Play-With-Heap-OCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA23F7591F33102200E0674A /* Build configuration list for PBXNativeTarget "Play-With-Heap-OCTests" */;
+			buildPhases = (
+				AA23F7491F33102200E0674A /* Sources */,
+				AA23F74A1F33102200E0674A /* Frameworks */,
+				AA23F74B1F33102200E0674A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA23F74F1F33102200E0674A /* PBXTargetDependency */,
+			);
+			name = "Play-With-Heap-OCTests";
+			productName = "Play-With-Heap-OCTests";
+			productReference = AA23F74D1F33102200E0674A /* Play-With-Heap-OCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA23F72C1F33102200E0674A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = MisterBooo;
+				TargetAttributes = {
+					AA23F7331F33102200E0674A = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 7NHU5364QV;
+						ProvisioningStyle = Automatic;
+					};
+					AA23F74C1F33102200E0674A = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 7NHU5364QV;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AA23F7331F33102200E0674A;
+					};
+				};
+			};
+			buildConfigurationList = AA23F72F1F33102200E0674A /* Build configuration list for PBXProject "Play-With-Heap-OC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA23F72B1F33102200E0674A;
+			productRefGroup = AA23F7351F33102200E0674A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA23F7331F33102200E0674A /* Play-With-Heap-OC */,
+				AA23F74C1F33102200E0674A /* Play-With-Heap-OCTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA23F7321F33102200E0674A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA23F7991F341A7F00E0674A /* Ninja.png in Resources */,
+				AA23F7471F33102200E0674A /* LaunchScreen.storyboard in Resources */,
+				AA23F7441F33102200E0674A /* Assets.xcassets in Resources */,
+				AA23F7421F33102200E0674A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA23F74B1F33102200E0674A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA23F7301F33102200E0674A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAC0D6DD1F38053A00B20791 /* UIView+MBRectCorner.m in Sources */,
+				AA23F7A11F34579400E0674A /* UIImage+MBClipCategory.m in Sources */,
+				AA23F73F1F33102200E0674A /* ViewController.m in Sources */,
+				AA23F73C1F33102200E0674A /* AppDelegate.m in Sources */,
+				AA23F7391F33102200E0674A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA23F7491F33102200E0674A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA23F7521F33102200E0674A /* Play_With_Heap_OCTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA23F74F1F33102200E0674A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA23F7331F33102200E0674A /* Play-With-Heap-OC */;
+			targetProxy = AA23F74E1F33102200E0674A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AA23F7401F33102200E0674A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA23F7411F33102200E0674A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AA23F7451F33102200E0674A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA23F7461F33102200E0674A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA23F7541F33102200E0674A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AA23F7551F33102200E0674A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA23F7571F33102200E0674A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7NHU5364QV;
+				INFOPLIST_FILE = "Play-With-Heap-OC/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MisterBooo.Play-With-Heap-OC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AA23F7581F33102200E0674A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7NHU5364QV;
+				INFOPLIST_FILE = "Play-With-Heap-OC/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MisterBooo.Play-With-Heap-OC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AA23F75A1F33102200E0674A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7NHU5364QV;
+				INFOPLIST_FILE = "Play-With-Heap-OCTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MisterBooo.Play-With-Heap-OCTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Play-With-Heap-OC.app/Play-With-Heap-OC";
+			};
+			name = Debug;
+		};
+		AA23F75B1F33102200E0674A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7NHU5364QV;
+				INFOPLIST_FILE = "Play-With-Heap-OCTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MisterBooo.Play-With-Heap-OCTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Play-With-Heap-OC.app/Play-With-Heap-OC";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA23F72F1F33102200E0674A /* Build configuration list for PBXProject "Play-With-Heap-OC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA23F7541F33102200E0674A /* Debug */,
+				AA23F7551F33102200E0674A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA23F7561F33102200E0674A /* Build configuration list for PBXNativeTarget "Play-With-Heap-OC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA23F7571F33102200E0674A /* Debug */,
+				AA23F7581F33102200E0674A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA23F7591F33102200E0674A /* Build configuration list for PBXNativeTarget "Play-With-Heap-OCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA23F75A1F33102200E0674A /* Debug */,
+				AA23F75B1F33102200E0674A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA23F72C1F33102200E0674A /* Project object */;
+}
