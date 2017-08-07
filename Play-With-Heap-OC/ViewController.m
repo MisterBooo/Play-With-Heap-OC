@@ -10,6 +10,7 @@
 #import "UIImage+MBClipCategory.h"
 #import "UIView+MBRectCorner.h"
 #import <math.h>
+
 @interface ViewController ()
 @property (nonatomic, strong) UISegmentedControl *countSegmentControl;
 @property (nonatomic, strong) UISegmentedControl *segmentControl;
@@ -59,8 +60,73 @@
     [self setupHeapCount:self.count];
 }
 - (void)onSort{
+    [self animationFatherButton:self.dataSource[0] sonButton:self.dataSource[1] ];
+}
+
+- (void)reloadData{
     
 }
+
+
+/**
+ 两个堆元素进行交换动画
+
+ @param fatherButton 父节点
+ @param sonButton 子节点
+ */
+- (void)animationFatherButton:(UIButton *)fatherButton sonButton:(UIButton *)sonButton{
+    //down
+    UIBezierPath *path1 = [UIBezierPath bezierPath];
+    [path1 moveToPoint:fatherButton.center];
+    CGFloat y = (fatherButton.frame.origin.y + sonButton.frame.origin.y) / 2 - 10;
+    CGFloat x = fatherButton.frame.origin.x - 10;
+    [path1 addQuadCurveToPoint:sonButton.center controlPoint:CGPointMake(x, y)];
+    [path1 setLineWidth:1];
+    [path1 stroke];
+    CAKeyframeAnimation *anima1 = [CAKeyframeAnimation animationWithKeyPath:@"position"];
+    //kCAFillModeForwards 当动画结束后,layer会一直保持着动画最后的状态
+    anima1.fillMode = kCAFillModeForwards;
+    anima1.path = path1.CGPath;
+    anima1.duration = 1.0f;
+    anima1.removedOnCompletion = false;
+    [fatherButton.layer addAnimation:anima1 forKey:@"pathAnimation"];
+    
+    //up
+    UIBezierPath *path2 = [UIBezierPath bezierPath];
+    [path2 moveToPoint:sonButton.center];
+    CGFloat y2 = (fatherButton.frame.origin.y + sonButton.frame.origin.y) / 2 - 10;
+    CGFloat x2 = sonButton.frame.origin.x + 10;
+    [path2 addQuadCurveToPoint:fatherButton.center controlPoint:CGPointMake(x2, y2)];
+    [path2 setLineWidth:1];
+    [path2 stroke];
+    
+    CAKeyframeAnimation *anima2 = [CAKeyframeAnimation animationWithKeyPath:@"position"];
+    anima2.fillMode = kCAFillModeForwards;
+    anima2.removedOnCompletion = false;
+
+    anima2.path = path2.CGPath;
+    anima2.duration = 1.0f;
+    [sonButton.layer addAnimation:anima2 forKey:@"pathAnimation"];
+    
+}
+
+- (void)beizeControl:(UIButton *)control startPoint:(CGPoint )startPoint  controlPoint:(CGPoint )controlPoint endPoint:(CGPoint )endpoint{
+    //up
+    UIBezierPath *path = [UIBezierPath bezierPath];
+    [path moveToPoint:startPoint];
+    [path addQuadCurveToPoint:endpoint controlPoint:controlPoint];
+    [path setLineWidth:1];
+    [path stroke];
+    
+    CAKeyframeAnimation *anima = [CAKeyframeAnimation animationWithKeyPath:@"position"];
+    anima.fillMode = kCAFillModeForwards;
+    anima.removedOnCompletion = false;
+    
+    anima.path = path.CGPath;
+    anima.duration = 1.0f;
+    [control.layer addAnimation:anima forKey:@"pathAnimation"];
+}
+
 #pragma mark - loadData
 - (void)setupHeapCount:(NSInteger )count{
     for (UIButton *button in self.heapView.subviews) {
@@ -89,6 +155,8 @@
         //第row个
         int row =  (i - pow(2, section - 1 ) + 1) * 2 - 1;
         UIButton *heap = [UIButton buttonWithType:UIButtonTypeCustom];
+        //索引堆的索引
+        heap.tag = i;
         heap.frame = CGRectMake(0, 0, buttonW, buttonH);
         heap.center = CGPointMake(width * row, centerY + (paddingY * 2 + buttonH) * section );
         heap.axcUI_rectCornerRadii = buttonW / 2.0;
@@ -102,6 +170,7 @@
         [self.dataSource addObject:heap];
     }
 }
+
 
 
 /**
