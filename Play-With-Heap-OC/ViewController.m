@@ -76,37 +76,13 @@
  */
 - (void)animationFatherButton:(UIButton *)fatherButton sonButton:(UIButton *)sonButton{
     //down
-    UIBezierPath *path1 = [UIBezierPath bezierPath];
-    [path1 moveToPoint:fatherButton.center];
     CGFloat y = (fatherButton.frame.origin.y + sonButton.frame.origin.y) / 2 - 10;
     CGFloat x = fatherButton.frame.origin.x - 10;
-    [path1 addQuadCurveToPoint:sonButton.center controlPoint:CGPointMake(x, y)];
-    [path1 setLineWidth:1];
-    [path1 stroke];
-    CAKeyframeAnimation *anima1 = [CAKeyframeAnimation animationWithKeyPath:@"position"];
-    //kCAFillModeForwards 当动画结束后,layer会一直保持着动画最后的状态
-    anima1.fillMode = kCAFillModeForwards;
-    anima1.path = path1.CGPath;
-    anima1.duration = 1.0f;
-    anima1.removedOnCompletion = false;
-    [fatherButton.layer addAnimation:anima1 forKey:@"pathAnimation"];
-    
+    [self beizeControl:fatherButton startPoint:fatherButton.center controlPoint:CGPointMake(x, y) endPoint:sonButton.center];
     //up
-    UIBezierPath *path2 = [UIBezierPath bezierPath];
-    [path2 moveToPoint:sonButton.center];
     CGFloat y2 = (fatherButton.frame.origin.y + sonButton.frame.origin.y) / 2 - 10;
     CGFloat x2 = sonButton.frame.origin.x + 10;
-    [path2 addQuadCurveToPoint:fatherButton.center controlPoint:CGPointMake(x2, y2)];
-    [path2 setLineWidth:1];
-    [path2 stroke];
-    
-    CAKeyframeAnimation *anima2 = [CAKeyframeAnimation animationWithKeyPath:@"position"];
-    anima2.fillMode = kCAFillModeForwards;
-    anima2.removedOnCompletion = false;
-
-    anima2.path = path2.CGPath;
-    anima2.duration = 1.0f;
-    [sonButton.layer addAnimation:anima2 forKey:@"pathAnimation"];
+    [self beizeControl:sonButton startPoint:sonButton.center controlPoint:CGPointMake(x2, y2) endPoint:fatherButton.center];
     
 }
 
